@@ -1,11 +1,11 @@
 import React from "react";
-import skills from "./data/skills";
+import config from "../config.json";
 
 const Skills = () => (
   <section className="skills">
     <h3>Skills</h3>
     <ul>
-      {skills.map((skill) => (
+      {config.skills.map((skill) => (
         <li key={skill}>{skill}</li>
       ))}
     </ul>
